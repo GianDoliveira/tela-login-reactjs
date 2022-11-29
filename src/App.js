@@ -1,16 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-import './components/FirstComponent'
-import FirstComponent from './components/FirstComponent';
+import Login from './layout/login'
+import Cadastro from './layout/cadastro'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
+import "./App.css";
 
-function App() {
+export default function App() {
+
   return (
-    <div className="App">
-      <h1>Hello World</h1>
-      <FirstComponent/>
-    </div>
-  );
+      <Router>
+        <Routes>
+          <Route path="/" element={<Login/>}/>
+          <Route path="/Cadastro" element={<Cadastro/>}/>
+        </Routes>
+      </Router>
+  )
 }
-
-export default App;
