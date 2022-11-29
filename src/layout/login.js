@@ -3,9 +3,11 @@ import {Link} from "react-router-dom"
 
 import {AiOutlineMail} from 'react-icons/ai'
 import {GiPadlock} from 'react-icons/gi'
+import { useEffect } from "react"
 
+export default function Login(props) {
 
-export default function Login() {
+    useEffect(() => {document.title = props.title})
 
     return (
         <section className={style.section}>

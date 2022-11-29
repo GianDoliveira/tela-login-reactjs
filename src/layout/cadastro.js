@@ -5,12 +5,14 @@ import {BsArrow90DegLeft} from 'react-icons/bs'
 import {AiOutlineUserSwitch} from 'react-icons/ai'
 import {AiOutlineMail} from 'react-icons/ai'
 import {GiPadlock} from 'react-icons/gi'
+import { useEffect } from 'react'
 
 
-export default function Cadatro() {
+export default function Cadatro(props) {
+
+    useEffect(() => {document.title = props.title})
 
     return (
-        
         <section className={style.section}>
             <Link to="/"><BsArrow90DegLeft className={style.arrow}/></Link>
             <div className={style.container}>

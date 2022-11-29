@@ -9,8 +9,8 @@ export default function App() {
   return (
       <Router>
         <Routes>
-          <Route path="/" element={<Login/>}/>
-          <Route path="/Cadastro" element={<Cadastro/>}/>
+          <Route path="/" element={<Login title="Login"/>}/>
+          <Route path="/Cadastro" element={<Cadastro title="Cadastro"/>}/>
         </Routes>
       </Router>
   )
